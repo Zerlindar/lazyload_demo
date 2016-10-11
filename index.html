@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<title>lazyLoad图片延时加载</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible"content="IE=EDGE">
+<meta name="renderer" content="webkit">
+<!--[if lt IE 9]>
+    <script src="html5shiv.js"></script>
+<![endif]-->
+<style>
+img {
+    display: block;
+	margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<img class="lazy" data-original="../../images/load1.jpg" width="765" height="574" alt="load1">
+<img class="lazy" data-original="../../images/load2.jpg" width="765" height="574" alt="load2">
+<img class="lazy" data-original="../../images/load3.jpg" width="765" height="574" alt="load3">
+<img class="lazy" data-original="../../images/load4.jpg" width="765" height="574" alt="load4">
+<img class="lazy" data-original="../../images/load5.jpg" width="765" height="574" alt="load5">
+<img class="lazy" data-original="../../images/load6.jpg" width="765" height="574" alt="load6">
+<script src="../../js/jquery-1.11.0.min.js"></script>
+<script src="jquery.lazyload.js?v=1.9.1"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+    $("img.lazy").lazyload({
+       effect:"fadeIn"});
+
+
+</script>
+
+</body>
+</html>
